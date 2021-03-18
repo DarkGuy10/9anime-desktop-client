@@ -1,7 +1,7 @@
 {
   "name": "9anime",
   "productName": "9anime Desktop Client",
-  "version": "1.0.0",
+  "version": "0.0-beta",
   "description": "A desktop client for 9anime",
   "main": "src/MainProcess.js",
   "scripts": {

@@ -6,7 +6,7 @@ A desktop client for 9anime with pre-added adblocker.
 
 ## Details
 Author          : @DarkGuy10 <br>
-Current version : v0.0-beta <br>
+Current version : v0.1-beta <br>
 Language        : NodeJS (using Electron) <br>
 
 ###### New Features Coming Soon...
