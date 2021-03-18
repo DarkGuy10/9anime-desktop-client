@@ -1,5 +1,5 @@
 {
-  "name": "9anime Desktop Client",
+  "name": "9anime",
   "productName": "9anime Desktop Client",
   "version": "1.0.0",
   "description": "A desktop client for 9anime",
@@ -45,6 +45,7 @@
     }
   },
   "dependencies": {
+    "electron-context-menu": "^2.4.0",
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {

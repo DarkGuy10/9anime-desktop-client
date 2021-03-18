@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            user-select: none;
+            overflow: hidden;
+        }
+        body{
+            background-color: #1e1e1e;
+            margin: 0;
+            border: none;
+            overflow: hidden;
+        }
+        #wrapper{
+            padding: 20px;;
+            height: 350px;
+            width: 100%;
+            display: block;
+        }
+        .column{
+            width: 50%;
+            float: left;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        #app-name{
+            font-size: 25px;
+            font-family: 'DejaVu Sans';
+            color: #fff;
+        }
+        .code-box{
+            width: 100%;
+            height: auto;
+            padding: 7px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            font-size: 14px;
+            color:white;
+            font-family: monospace;
+            line-height: 17px;
+        }
+        #footer{
+            text-align: center;
+            color:white;
+            font-family: 'DejaVu Sans';
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="column">
+            <img src="../../Icons/Icon-small.png">
+        </div>
+        <div class="column">
+            <h1 id="app-name"></h1>
+            <div class="code-box" id="info">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Made with ❤️ using Electron! SASAGEYO!!! 
+    </div>
+
+    <script src="About.js"></script>
+</body>
+</html>
