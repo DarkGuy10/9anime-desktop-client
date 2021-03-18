@@ -1,6 +1,22 @@
 const { app, BrowserWindow, Menu, Tray , session, shell} = require('electron');
 const path = require('path');
 const Store = require('./Scripts/Store.js');
+const AutoLaunch = require('auto-launch');
+
+// Enable auto launch on startup
+const autoLauncher = new AutoLaunch({
+    name: "9anime"
+});
+// Checking if autoLaunch is enabled, if not then enabling it.
+autoLauncher.isEnabled()
+	.then(isEnabled => {
+		if(isEnabled)
+			return;
+		autoLauncher.enable();
+	}).catch(error => {
+		throw error
+	})
+
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
